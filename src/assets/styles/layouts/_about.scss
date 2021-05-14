@@ -1,0 +1,152 @@
+/*=======================================*\
+ABOUT US
+\*=======================================*/
+.main {
+  .main__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 $side-margin;
+
+    .main__about-title {
+      font-size: $base-size * 4;
+      font-weight: $bold;
+      align-self: flex-start;
+      margin: $base-size * 5 0;
+      color: $purple-one;
+    }
+
+    .main__about-block {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .main__about-img-container {
+        .main__about-img {
+          max-width: 42vw;
+          object-fit: cover;
+          border-radius: $base-size * 2;
+          margin-right: $base-size * 3;
+        }
+  
+        .main__about-img-left {
+          margin-right: 0;
+          margin-left: $base-size * 3;
+        }
+      }
+
+      .main__about-text-block {
+        width: 42vw;
+        .main__about-paragraph {
+          color: $purple-dark;
+          margin-bottom: $base-size * 2 + 4;
+        }
+      }
+    }
+  }
+
+  .main__about-animation {  
+    height: 300px;
+    width: 100vw;
+    padding: 40px 64px;
+    display: flex;
+
+    .main__about-object {
+      width: 80px;
+      height: 80px;
+      margin-left: 30vw;
+      background:url("../images/saturn.svg");
+      background-position: center;
+      background-size: contain;
+  
+      offset-path: path('m167.5,116.8c-65,25 -148,55 -165,19c-17,-36 80,-77 136,-97c56,-20 153,-58 167,-23c14,35 -88,83 -129,98');
+      offset-distance: 0%;
+
+      animation: red-ball 8s ease-in-out alternate infinite;
+    }
+
+    @keyframes red-ball {
+      from {
+        offset-distance: 0%;
+      }
+      to {
+        offset-distance: 100%;
+      }
+    }
+  }
+/**
+*Adaptative video
+*/
+
+  .main__video {
+    margin: 0 $side-margin;
+
+    .main__video-title {
+      @extend %titleSec;
+    }
+
+    .main__video-figure {
+      .main__video-container {
+        @extend %aspectRatio;
+      }
+
+      .main__video-container iframe, .main__video-container object, .main__video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+  }
+
+  .main__video-no-margin {
+    margin: 0;
+  }
+}
+
+/*=======================================*\
+MEDIA QUERIES
+\*=======================================*/
+
+@media screen and (max-width: 1024px) {
+  .main{
+    .main__about {
+      margin: 0 $base-size * 3;
+
+      .main__about-block {
+        flex-direction: column;
+        align-items: center;
+
+        .main__about-img-container {
+          display: flex;
+          align-items: center;
+
+          .main__about-img {
+            max-width: none;
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: $base-size * 3;
+          }
+        }
+
+        .main__about-text-block {
+          width: 100%;
+        }
+      }
+    }
+
+    .main__about-animation {
+      padding: 40px 24px;
+      .main__about-object {
+        margin-left: 5vw;
+      }
+    }
+
+    .main__video {
+      margin: 0 $base-size * 3;
+    }
+  }
+}

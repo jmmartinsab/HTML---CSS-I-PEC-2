@@ -23,7 +23,7 @@
   <header id="head" class="header">
     <div class="header__logo">
       <a href="index.html">
-        <img class="header__logo-img" src="../src/assets/images/saturn.svg" alt="Saturn-logo">
+        <img class="header__logo-img" src="../src/assets/images/saturn.svg" loading="lazy" alt="Saturn-logo">
       </a>
       <p class="header__logo-name">Sat.Eat</p>
     </div>
@@ -86,13 +86,13 @@
           <p class="main__recipe-author-name">krterio fgetoy</p>
 
           <div class="main__recipe-author-pic-round">
-            <img class="main__recipe-author-img" src="assets/images/alien.webp" alt="author">
+            <img class="main__recipe-author-img" src="assets/images/alien.webp" loading="lazy" alt="author">
           </div>
         </div>
       </div>
 
       <div class="main__img-intro">
-        <img src="assets/images/sepia.webp" alt="receta" class="main__img-intro-1"
+        <img src="assets/images/sepia.webp" alt="receta" loading="lazy" class="main__img-intro-1"
           srcset="assets/images/sepia.webp 3264w, assets/images/sepia-s800.webp 800w">
       </div>
 
@@ -134,33 +134,37 @@
 
       <div class="main__recipe-gallery">
         <div class="main__recipe-gallery-content-img">
-          <img class="main__recipe-gallery-img" src="assets/images/sepia-limpia-1024.webp" alt="image-recipe-sepia"
+          <img class="main__recipe-gallery-img" loading="lazy" src="assets/images/sepia-limpia-1024.webp"
+            alt="image-recipe-sepia"
             srcset="assets/images/sepia-limpia-1024.webp 1024w, assets/images/sepia-limpia-500.webp 500w">
         </div>
 
         <div class="main__recipe-gallery-content-img">
-          <img class="main__recipe-gallery-img" src="assets/images/perejil-1024.webp" alt="image-recipe-perejil"
+          <img class="main__recipe-gallery-img" loading="lazy" src="assets/images/perejil-1024.webp"
+            alt="image-recipe-perejil"
             srcset="assets/images/perejil-1024.webp 1024w, assets/images/perejil-500.webp 500w">
         </div>
 
         <div class="main__recipe-gallery-content-img">
-          <img class="main__recipe-gallery-img" src="assets/images/patatas-1024.webp" alt="image-recipe-potatoes"
+          <img class="main__recipe-gallery-img" loading="lazy" src="assets/images/patatas-1024.webp"
+            alt="image-recipe-potatoes"
             srcset="assets/images/patatas-1024.webp 1024w, assets/images/patatas-500.webp 500w">
         </div>
 
         <div class="main__recipe-gallery-content-img">
-          <img class="main__recipe-gallery-img" src="assets/images/huevos-1024.webp" alt="image-recipe-eggs"
-            srcset="assets/images/huevos-1024.webp 1024w, assets/images/huevos-500.webp 500w">
+          <img class="main__recipe-gallery-img" loading="lazy" src="assets/images/huevos-1024.webp"
+            alt="image-recipe-eggs" srcset="assets/images/huevos-1024.webp 1024w, assets/images/huevos-500.webp 500w">
         </div>
 
         <div class="main__recipe-gallery-content-img">
-          <img class="main__recipe-gallery-img" src="assets/images/aceite-oliva-1024.webp" alt="image-recipe-oil"
+          <img class="main__recipe-gallery-img" loading="lazy" src="assets/images/aceite-oliva-1024.webp"
+            alt="image-recipe-oil"
             srcset="assets/images/aceite-oliva-1024.webp 1024w, assets/images/aceite-oliva-500.webp 500w">
         </div>
 
         <div class="main__recipe-gallery-content-img">
-          <img class="main__recipe-gallery-img" src="assets/images/ajo-1024.webp" alt="image-recipe-garlic"
-            srcset="assets/images/ajo-1024.webp 1024w, assets/images/ajo-500.webp 500w">
+          <img class="main__recipe-gallery-img" loading="lazy" src="assets/images/ajo-1024.webp"
+            alt="image-recipe-garlic" srcset="assets/images/ajo-1024.webp 1024w, assets/images/ajo-500.webp 500w">
         </div>
       </div>
 
@@ -231,7 +235,7 @@
 
       <!-- Reused block video -->
       <div class="main__video main__video-no-margin">
-        <figure class="main__video-figure">
+        <figure class="main__video-figure" loading="lazy">
           <div class="main__video-container">
             <iframe class="main__video-frame" width="560" height="315" src="https://www.youtube.com/embed/CEsapVd2Nx4"
               title="YouTube video player"
@@ -246,7 +250,7 @@
 
   <footer class="footer">
     <div class="footer__logo">
-      <img src="./assets/images/saturn.svg" alt="web-logo">
+      <img src="./assets/images/saturn.svg" loading="lazy" alt="web-logo">
     </div>
 
     <nav class="footer__menu">
@@ -266,7 +270,7 @@
   </footer>
 
   <!-- Link to base JS of the project -->
-  <script src="./assets/scripts/base.js"></script>
+  <script src="./assets/scripts/base.js" async="async"></script>
 </body>
 
 </html>

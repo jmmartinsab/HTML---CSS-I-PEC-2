@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./assets/images/web-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./assets/images/web-16x16.png" loading="lazy" sizes="16x16" />
   <!-- Link to base sheet of SASS -->
   <link rel="stylesheet" type="text/css" href="./assets/styles/base.scss" />
   <!-- Link to font family -->
@@ -24,7 +24,7 @@
   <header id="head" class="header">
     <div class="header__logo">
       <a href="index.html">
-        <img class="header__logo-img" src="../src/assets/images/saturn.svg" alt="Saturn-logo">
+        <img class="header__logo-img" src="../src/assets/images/saturn.svg" loading="lazy" alt="Saturn-logo">
       </a>
       <p class="header__logo-name">Sat.Eat</p>
     </div>
@@ -79,7 +79,7 @@
         </p>
       </div>
       <div class="main__clipimg-content">
-        <img class="main__clipimg-image" alt="alien-ovni" srcset="assets/images/alien-l.jpg 600w,
+        <img class="main__clipimg-image" loading="lazy" alt="alien-ovni" srcset="assets/images/alien-l.jpg 600w,
           assets/images/alien-s.jpg 400W" sizes="(max-width: 768px) 600px," src="assets/images/alien-l.jpg">
       </div>
     </div>
@@ -111,7 +111,7 @@
 
   <footer class="footer">
     <div class="footer__logo">
-      <img src="./assets/images/saturn.svg" alt="web-logo">
+      <img src="./assets/images/saturn.svg" loading="lazy" alt="web-logo">
     </div>
 
     <nav class="footer__menu">
@@ -131,7 +131,7 @@
   </footer>
 
   <!-- Link to base JS of the project -->
-  <script src="./assets/scripts/base.js"></script>
+  <script src="./assets/scripts/base.js" async="async"></script>
 </body>
 
 </html>

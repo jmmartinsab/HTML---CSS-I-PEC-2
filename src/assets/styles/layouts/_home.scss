@@ -24,7 +24,7 @@ HEADER & MENU
     }
 
     .header__logo-name {
-      font-family: 'Audiowide', cursive;
+      font-family: 'Audiowide', sans-serif;
       font-size: 28px;
       font-weight: bold;
       color: $purple-one;
@@ -122,8 +122,7 @@ FOOTER
     .footer__link {
       margin-left: $base-size * 4;
       .footer__icon {
-        font-size: $base-size * 4;
-        color: $purple-one;
+        width: 32px;
       }
     }
 
@@ -144,7 +143,7 @@ PORTADA
     align-items: center;
     justify-content: center;
     height: $base-size * 75;
-    background-image: url("../images/saturn-hero-p-1920.png");
+    background-image: url("../images/saturn-hero-p-1920.webp");
     background-position: center;
     background-size: cover;
 
@@ -196,7 +195,7 @@ PORTADA
   @media 
   (max-width: 768px) {
     .main__hero {
-      background-image: url('../images/saturn-hero-p-1024.png');
+      background-image: url('../images/saturn-hero-p-1024.webp');
     }
   }
 
@@ -271,10 +270,10 @@ PORTADA
           @include pictureCard('../images/saturn-card.webp');
         }
         .main__card-two {
-          @include pictureCard('../images/sat-food.png');
+          @include pictureCard('../images/sat-food.webp');
         }
         .main__card-three {
-          @include pictureCard('../images/data.jpg');
+          @include pictureCard('../images/data.webp');
         }
 
         .main__card:hover {

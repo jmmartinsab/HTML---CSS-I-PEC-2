@@ -24,6 +24,8 @@ ABOUT US
       .main__about-img-container {
         .main__about-img {
           max-width: 42vw;
+          width: 40vw;
+          height: 21vw;
           object-fit: cover;
           border-radius: $base-size * 2;
           margin-right: $base-size * 3;

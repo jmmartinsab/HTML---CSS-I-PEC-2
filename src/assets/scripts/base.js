@@ -5,3 +5,5 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");
   headerMenu.classList.toggle("js-header__menu-container--show");
 });
+
+document.addEventListener('touchstart', onTouchStart, {passive: true});
